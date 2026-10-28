@@ -1,0 +1,26 @@
+﻿experiment_id,public_label,group,module_1,module_2,module_3,module_4,analysis_total,original_total
+AI01,GPT 6 Astra（Max） / ChatGPT Codex,agents,31.0,3.0,25.0,24.0,83.0,83.0
+AI02,GPT 6 Astra（Low） / ChatGPT Codex,agents,22.0,0.0,30.0,30.0,82.0,82.0
+AI03,GPT 6.1 Sol（Max） / ChatGPT Codex,agents,20.0,5.0,30.0,24.0,79.0,79.0
+AI04,GPT 6.1 Sol（Low） / ChatGPT Codex,agents,20.0,0.0,25.0,24.0,69.0,69.0
+AI05,GPT 6 Luna（Max） / ChatGPT Codex,agents,12.5,1.0,10.0,18.0,41.5,41.0
+AI06,GPT 6 Luna（Low） / ChatGPT Codex,agents,11.0,1.0,5.0,12.0,29.0,28.0
+AI07,DeepSeek v4.1 Flash 1017（Max） / DeepSeek Harness,agents,19.0,0.0,20.0,24.0,63.0,63.0
+AI08,DeepSeek v4.1 Flash 1017（Off） / DeepSeek Harness,agents,12.0,2.0,0.0,24.0,38.0,37.0
+AI09,Seed 2.1Pro（高） / 豆包工作,agents,17.0,0.0,0.0,0.0,17.0,17.0
+AI10,Seed 2.1Pro（低） / 豆包工作,agents,20.0,2.0,20.0,24.0,66.0,66.0
+AI11,Seed 2.1Lite（高） / 豆包工作,agents,13.5,1.0,10.0,24.0,48.5,48.0
+AI12,Seed 2.1Lite（低） / 豆包工作,agents,6.5,1.0,25.0,24.0,56.5,56.0
+AI13,Kimi K3.1（极致） / Kimi work,agents,24.0,2.0,20.0,0.0,46.0,46.0
+AI14,Kimi K3.1（标准） / Kimi work,agents,23.0,2.0,15.0,18.0,58.0,58.0
+AI15,MiniMax M3.1 Flash（Max） / MiniMax Code,agents,0.0,1.0,15.0,30.0,46.0,46.0
+AI16,MiniMax M3.1 Flash（Low） / MiniMax Code,agents,11.0,3.0,20.0,24.0,58.0,58.0
+AI17,MiMo-V2.6-Pro（思考档位不可选） / MiMo Desktop,agents,8.0,1.0,5.0,0.0,14.0,12.0
+AI18,Qwen3.8-Max（思考档位不可选） / Qwen Code,agents,19.0,1.0,10.0,0.0,30.0,30.0
+AI19,Gemini 4 Argon（High） / stdlib Python fixed runner,traditional,34.0,3.0,25.0,30.0,92.0,92.0
+AI20,Claude Opus 5.5（Max） / 传统测试执行器,traditional,12.0,0.0,15.0,6.0,33.0,33.0
+HSR-Player-4,HSR-Player-4,players,25.0,4.0,25.0,6.0,60.0,51.0
+HSR-Player-5,HSR-Player-5,players,34.0,6.0,20.0,18.0,78.0,78.0
+HSR-Player-3,HSR-Player-3,players,30.5,6.0,15.0,12.0,63.5,60.0
+HSR-Player-1,HSR-Player-1,players,32.0,3.0,30.0,0.0,65.0,63.0
+HSR-Player-2,HSR-Player-2,players,33.5,4.0,30.0,30.0,97.5,97.0

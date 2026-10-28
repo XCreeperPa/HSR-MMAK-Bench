@@ -1,0 +1,99 @@
+{
+  "benchmark": "HSR-MMAK-Bench",
+  "version": "2-four-modules-20261025-stage2-music-shuffle",
+  "title": "《崩坏：星穹铁道》多模态知识基准 v2（图片标注、音乐辨识、图片综合、视频综合）",
+  "question_count": 21,
+  "score_max": 100,
+  "dimensions": [
+    {
+      "id": "recognition",
+      "name": "辨识内容"
+    },
+    {
+      "id": "multimodal_reasoning",
+      "name": "多模态推理"
+    },
+    {
+      "id": "plot_reasoning",
+      "name": "情节推理"
+    }
+  ],
+  "question_types": [
+    "point_identification",
+    "single_choice",
+    "multi_choice"
+  ],
+  "scoring": {
+    "single_choice": "题目自定义分值，选中正确选项得满分，否则 0 分",
+    "multi_choice": "满分6分；正确项有2或3个，每项分别3或2分；少选可得分，错选任意项整题0分；最多选3项，可空选。",
+    "point_identification": "每位自机角色1分；姓名与头部位置同时正确计1分；不归一化；不重复计分。"
+  },
+  "assets": "assets.json",
+  "questions": "questions.json",
+  "planned_structure": {
+    "score_max": 100,
+    "modules": [
+      {
+        "id": "module_1",
+        "name": "图片标注",
+        "question_count": 4,
+        "score_max": 34,
+        "scoring_points": 34,
+        "question_type": "point_identification"
+      },
+      {
+        "id": "module_2",
+        "name": "音乐辨识",
+        "question_count": 6,
+        "score_per_question": 1,
+        "score_max": 6,
+        "question_type": "single_choice",
+        "media": "纯音乐前10秒",
+        "coverage": [
+          "空间站「黑塔」",
+          "雅利洛-Ⅵ",
+          "仙舟「罗浮」",
+          "匹诺康尼",
+          "翁法罗斯",
+          "二相乐园"
+        ]
+      },
+      {
+        "id": "module_3",
+        "name": "图片综合",
+        "question_count": 6,
+        "score_per_question": 5,
+        "score_max": 30,
+        "question_type": "single_choice"
+      },
+      {
+        "id": "module_4",
+        "name": "视频综合",
+        "question_count": 5,
+        "score_per_question": 6,
+        "score_max": 30,
+        "question_type": "single_choice",
+        "selection_target": "incorrect_analysis",
+        "media": "官方Bilibili视频节选（保留字幕与原音轨）"
+      }
+    ]
+  },
+  "normalization": {
+    "stage": "stage1_complete",
+    "active_assets": 39,
+    "asset_order": "question_order_media_type_grouped",
+    "option_order": "fixed_reshuffled",
+    "answer_key_format": "stage1",
+    "source_status": "wiki_hierarchy_verified_game_review_entry_open"
+  },
+  "review": {
+    "decisions_applied": true,
+    "music_listening_review": "skipped",
+    "q0021_voice_identity": "text_checked_not_independently_listened",
+    "runtime_shuffle": false,
+    "asset_renumber": "applied",
+    "player_package": "exported",
+    "source_citations": "wiki_hierarchy_verified_game_review_entry_not_independently_verified",
+    "module_2_order": "once_randomized_and_renumbered_20261025"
+  }
+}

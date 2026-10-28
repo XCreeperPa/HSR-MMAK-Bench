@@ -1,0 +1,795 @@
+[
+  {
+    "character_roster_version": "playable-20261009",
+    "coordinate_space": "original_image_pixels",
+    "dimension": "recognition",
+    "id": "q0001",
+    "image_height": 1080,
+    "image_width": 1920,
+    "module": 1,
+    "options": [],
+    "order": 1,
+    "prompt": "请在图中逐一标注可操控角色的头部位置，并选择对应的角色姓名。",
+    "score": 6,
+    "stimulus": [
+      "a0001"
+    ],
+    "type": "point_identification",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "character_roster_version": "playable-20261009",
+    "coordinate_space": "original_image_pixels",
+    "dimension": "recognition",
+    "id": "q0002",
+    "image_height": 1080,
+    "image_width": 1920,
+    "module": 1,
+    "options": [],
+    "order": 2,
+    "prompt": "请在图中逐一标注可操控角色的头部位置，并选择对应的角色姓名。",
+    "score": 7,
+    "stimulus": [
+      "a0002"
+    ],
+    "type": "point_identification",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "character_roster_version": "playable-20261009",
+    "coordinate_space": "original_image_pixels",
+    "dimension": "recognition",
+    "id": "q0003",
+    "image_height": 1600,
+    "image_width": 2844,
+    "module": 1,
+    "options": [],
+    "order": 3,
+    "prompt": "请在图中逐一标注可操控角色的头部位置，并选择对应的角色姓名。",
+    "score": 6,
+    "stimulus": [
+      "a0003"
+    ],
+    "type": "point_identification",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "character_roster_version": "playable-20261009",
+    "coordinate_space": "original_image_pixels",
+    "dimension": "recognition",
+    "id": "q0004",
+    "image_height": 1440,
+    "image_width": 2560,
+    "module": 1,
+    "options": [],
+    "order": 4,
+    "prompt": "请在图中逐一标注可操控角色的头部位置，并选择对应的角色姓名。",
+    "score": 15,
+    "stimulus": [
+      "a0004"
+    ],
+    "type": "point_identification",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "recognition",
+    "id": "q0005",
+    "instructions": "音频时长10秒，可重复播放。四选一，选对得1分，选错得0分。",
+    "module": 2,
+    "options": [
+      {
+        "assets": [],
+        "content_id": "caea97881e96f7c85",
+        "id": "A",
+        "label": "匹诺康尼"
+      },
+      {
+        "assets": [],
+        "content_id": "c8afe376daf2b2fd5",
+        "id": "B",
+        "label": "雅利洛-Ⅵ"
+      },
+      {
+        "assets": [],
+        "content_id": "c9c19819242740ebe",
+        "id": "C",
+        "label": "二相乐园"
+      },
+      {
+        "assets": [],
+        "content_id": "c2a33271d16385b38",
+        "id": "D",
+        "label": "翁法罗斯"
+      }
+    ],
+    "order": 5,
+    "prompt": "听取音乐片段，判断它对应下列哪个地区。",
+    "score": 1,
+    "stimulus": [
+      "a0030"
+    ],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "recognition",
+    "id": "q0006",
+    "instructions": "音频时长10秒，可重复播放。四选一，选对得1分，选错得0分。",
+    "module": 2,
+    "options": [
+      {
+        "assets": [],
+        "content_id": "cb106b764d795774e",
+        "id": "A",
+        "label": "匹诺康尼"
+      },
+      {
+        "assets": [],
+        "content_id": "c6e06122406a2b2aa",
+        "id": "B",
+        "label": "仙舟「罗浮」"
+      },
+      {
+        "assets": [],
+        "content_id": "cb3dcf1c0402f86ef",
+        "id": "C",
+        "label": "二相乐园"
+      },
+      {
+        "assets": [],
+        "content_id": "cd71fb7867cb2c537",
+        "id": "D",
+        "label": "雅利洛-Ⅵ"
+      }
+    ],
+    "order": 6,
+    "prompt": "听取音乐片段，判断它对应下列哪个地区。",
+    "score": 1,
+    "stimulus": [
+      "a0034"
+    ],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "recognition",
+    "id": "q0007",
+    "instructions": "音频时长10秒，可重复播放。四选一，选对得1分，选错得0分。",
+    "module": 2,
+    "options": [
+      {
+        "assets": [],
+        "content_id": "c37584a2fc259972a",
+        "id": "A",
+        "label": "空间站「黑塔」"
+      },
+      {
+        "assets": [],
+        "content_id": "c597e2d151e0d1428",
+        "id": "B",
+        "label": "匹诺康尼"
+      },
+      {
+        "assets": [],
+        "content_id": "c8a8627b74a2d333e",
+        "id": "C",
+        "label": "二相乐园"
+      },
+      {
+        "assets": [],
+        "content_id": "c7af0132ad0ad0706",
+        "id": "D",
+        "label": "翁法罗斯"
+      }
+    ],
+    "order": 7,
+    "prompt": "听取音乐片段，判断它对应下列哪个地区。",
+    "score": 1,
+    "stimulus": [
+      "a0032"
+    ],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "recognition",
+    "id": "q0008",
+    "instructions": "音频时长10秒，可重复播放。四选一，选对得1分，选错得0分。",
+    "module": 2,
+    "options": [
+      {
+        "assets": [],
+        "content_id": "cfb60ea3aa6da04bb",
+        "id": "A",
+        "label": "翁法罗斯"
+      },
+      {
+        "assets": [],
+        "content_id": "c48ab80604d1fb3b9",
+        "id": "B",
+        "label": "雅利洛-Ⅵ"
+      },
+      {
+        "assets": [],
+        "content_id": "ceb5b6b24218e531e",
+        "id": "C",
+        "label": "空间站「黑塔」"
+      },
+      {
+        "assets": [],
+        "content_id": "ca69ff07f25513e7c",
+        "id": "D",
+        "label": "仙舟「罗浮」"
+      }
+    ],
+    "order": 8,
+    "prompt": "听取音乐片段，判断它对应下列哪个地区。",
+    "score": 1,
+    "stimulus": [
+      "a0029"
+    ],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "recognition",
+    "id": "q0009",
+    "instructions": "音频时长10秒，可重复播放。四选一，选对得1分，选错得0分。",
+    "module": 2,
+    "options": [
+      {
+        "assets": [],
+        "content_id": "c5170a5a0b9fbeacd",
+        "id": "A",
+        "label": "仙舟「罗浮」"
+      },
+      {
+        "assets": [],
+        "content_id": "c38088fd36a3c65d8",
+        "id": "B",
+        "label": "二相乐园"
+      },
+      {
+        "assets": [],
+        "content_id": "c32db52b80ec4a41d",
+        "id": "C",
+        "label": "匹诺康尼"
+      },
+      {
+        "assets": [],
+        "content_id": "ce2f77873cc0a4ebb",
+        "id": "D",
+        "label": "雅利洛-Ⅵ"
+      }
+    ],
+    "order": 9,
+    "prompt": "听取音乐片段，判断它对应下列哪个地区。",
+    "score": 1,
+    "stimulus": [
+      "a0031"
+    ],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "recognition",
+    "id": "q0010",
+    "instructions": "音频时长10秒，可重复播放。四选一，选对得1分，选错得0分。",
+    "module": 2,
+    "options": [
+      {
+        "assets": [],
+        "content_id": "cbafe90c990f94366",
+        "id": "A",
+        "label": "翁法罗斯"
+      },
+      {
+        "assets": [],
+        "content_id": "c2adf529507965405",
+        "id": "B",
+        "label": "仙舟「罗浮」"
+      },
+      {
+        "assets": [],
+        "content_id": "c77f71958d8fee66d",
+        "id": "C",
+        "label": "二相乐园"
+      },
+      {
+        "assets": [],
+        "content_id": "c25445625347db317",
+        "id": "D",
+        "label": "空间站「黑塔」"
+      }
+    ],
+    "order": 10,
+    "prompt": "听取音乐片段，判断它对应下列哪个地区。",
+    "score": 1,
+    "stimulus": [
+      "a0033"
+    ],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "plot_reasoning",
+    "id": "q0011",
+    "instructions": "单项选择题，共5分。选对得5分，选错得0分。",
+    "module": 3,
+    "options": [
+      {
+        "assets": [
+          "a0008"
+        ],
+        "content_id": "ccfe55842e84c360f",
+        "id": "A",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0006"
+        ],
+        "content_id": "c2c96c8c6558bf00b",
+        "id": "B",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0005"
+        ],
+        "content_id": "c2a7143b642f15ca1",
+        "id": "C",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0007"
+        ],
+        "content_id": "ca1f2295aba00bb83",
+        "id": "D",
+        "label": ""
+      }
+    ],
+    "order": 11,
+    "prompt": "哪幅图对应的事件中，人物有意借已有的危机，促使空间站科员摆脱对天才的盲信，学会独立判断？",
+    "score": 5,
+    "stimulus": [],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "plot_reasoning",
+    "id": "q0012",
+    "instructions": "单项选择题，共5分。选对得5分，选错得0分。",
+    "module": 3,
+    "options": [
+      {
+        "assets": [
+          "a0012"
+        ],
+        "content_id": "ca2ec7c3476b4fbfd",
+        "id": "A",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0009"
+        ],
+        "content_id": "c975ab5fcb9f39900",
+        "id": "B",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0011"
+        ],
+        "content_id": "ccc8fe523336a6555",
+        "id": "C",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0010"
+        ],
+        "content_id": "cb6d595db41010020",
+        "id": "D",
+        "label": ""
+      }
+    ],
+    "order": 12,
+    "prompt": "哪幅图对应的事件中，人物以当地人的建设能力与努力为依据，争取让他们自己决定家园的未来？",
+    "score": 5,
+    "stimulus": [],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "plot_reasoning",
+    "id": "q0013",
+    "instructions": "单项选择题，共5分。选对得5分，选错得0分。",
+    "module": 3,
+    "options": [
+      {
+        "assets": [
+          "a0016"
+        ],
+        "content_id": "c747df110bd8ae3bb",
+        "id": "A",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0013"
+        ],
+        "content_id": "ccbbc644887513973",
+        "id": "B",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0015"
+        ],
+        "content_id": "cb00c8f9a9b7a5d49",
+        "id": "C",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0014"
+        ],
+        "content_id": "c33261fbfd3e829c0",
+        "id": "D",
+        "label": ""
+      }
+    ],
+    "order": 13,
+    "prompt": "哪幅图对应的事件中，人物将敌人施加于自身的威胁转化为反击的机会？",
+    "score": 5,
+    "stimulus": [],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "plot_reasoning",
+    "id": "q0014",
+    "instructions": "单项选择题，共5分。选对得5分，选错得0分。",
+    "module": 3,
+    "options": [
+      {
+        "assets": [
+          "a0020"
+        ],
+        "content_id": "cbda3d3e1b84e525a",
+        "id": "A",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0018"
+        ],
+        "content_id": "c37e9db98b02d190a",
+        "id": "B",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0019"
+        ],
+        "content_id": "c2fadf272985657e6",
+        "id": "C",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0017"
+        ],
+        "content_id": "c90b718bb291f38f5",
+        "id": "D",
+        "label": ""
+      }
+    ],
+    "order": 14,
+    "prompt": "哪幅图对应的事件中，人物将自己未尽的道路托付给后来者？",
+    "score": 5,
+    "stimulus": [],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "plot_reasoning",
+    "id": "q0015",
+    "instructions": "单项选择题，共5分。选对得5分，选错得0分。",
+    "module": 3,
+    "options": [
+      {
+        "assets": [
+          "a0021"
+        ],
+        "content_id": "c220c42d508aa7c38",
+        "id": "A",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0022"
+        ],
+        "content_id": "cbcb07ed14fa1a8ea",
+        "id": "B",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0023"
+        ],
+        "content_id": "cc6754a939ff89ffb",
+        "id": "C",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0024"
+        ],
+        "content_id": "c09f4e6857051df0b",
+        "id": "D",
+        "label": ""
+      }
+    ],
+    "order": 15,
+    "prompt": "哪幅图对应的事件中，人物让众人相信虚假的承诺，并借此延续了对他们的庇护？",
+    "score": 5,
+    "stimulus": [],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "plot_reasoning",
+    "id": "q0016",
+    "instructions": "单项选择题，共5分。选对得5分，选错得0分。",
+    "module": 3,
+    "options": [
+      {
+        "assets": [
+          "a0028"
+        ],
+        "content_id": "c4e97678282af7172",
+        "id": "A",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0025"
+        ],
+        "content_id": "cf59b91801e1f5426",
+        "id": "B",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0027"
+        ],
+        "content_id": "cfdf7f46114788d48",
+        "id": "C",
+        "label": ""
+      },
+      {
+        "assets": [
+          "a0026"
+        ],
+        "content_id": "c5330fde22a0039ed",
+        "id": "D",
+        "label": ""
+      }
+    ],
+    "order": 16,
+    "prompt": "哪幅图对应的事件中，眼前的威胁虽被除去，却也切断了当地幻造种赖以生存的供给？",
+    "score": 5,
+    "stimulus": [],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "plot_reasoning",
+    "id": "q0017",
+    "instructions": "“片段中”的表述仅指下方提供的视频范围。四选一，选对得6分，选错得0分。",
+    "module": 4,
+    "options": [
+      {
+        "assets": [],
+        "content_id": "ce508da9cf18f49ce",
+        "id": "A",
+        "label": "交战双方曾有师徒之谊；师长身堕魔阴，是理解这场冲突的重要背景。"
+      },
+      {
+        "assets": [],
+        "content_id": "c06ecb9188750d747",
+        "id": "B",
+        "label": "片段中的授业画面发生在交战之后：曾经的弟子成为师长，将自己承接的教诲传给下一代。"
+      },
+      {
+        "assets": [],
+        "content_id": "c2d2216d0e864ba4d",
+        "id": "C",
+        "label": "暖色的授业场景转入冷色的交战场景，持剑动作的呼应将两个时刻连接起来，突出同一对人物关系的变化。"
+      },
+      {
+        "assets": [],
+        "content_id": "ca5ce13dd91c002d2",
+        "id": "D",
+        "label": "片段将昔日所学与今日交锋并置，呈现出传承的复杂性：承接师长的教诲，也可能意味着有朝一日必须与其对抗。"
+      }
+    ],
+    "order": 17,
+    "prompt": "观看视频，结合相关剧情，选出分析有误的一项。",
+    "score": 6,
+    "selection_target": "incorrect_analysis",
+    "stimulus": [
+      "a0035"
+    ],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "plot_reasoning",
+    "id": "q0018",
+    "instructions": "“片段中”的表述仅指下方提供的视频范围。四选一，选对得6分，选错得0分。",
+    "module": 4,
+    "options": [
+      {
+        "assets": [],
+        "content_id": "cff01ae20511b297d",
+        "id": "A",
+        "label": "镜头由整理发饰的近景切换到同伴相处的双人画面，再转入多人远景，将个人装扮的小事融入共同度过的温馨时刻。"
+      },
+      {
+        "assets": [],
+        "content_id": "c13078c5ea7ad9cba",
+        "id": "B",
+        "label": "长发少女亲手整理蓝绿色的发饰，同伴随后称赞她的装扮很好看。"
+      },
+      {
+        "assets": [],
+        "content_id": "c0b8c20834bea214a",
+        "id": "C",
+        "label": "画面中的取景框将观看视角交给正在摄影的同伴，记录彼此模样的举动增添了相处的温馨感。"
+      },
+      {
+        "assets": [],
+        "content_id": "c82d8931e15bff2b0",
+        "id": "D",
+        "label": "少女的长发不仅是外貌特征，也呼应了她将头发长度视为资历证明的背景。"
+      }
+    ],
+    "order": 18,
+    "prompt": "观看视频，结合相关剧情，选出分析有误的一项。",
+    "score": 6,
+    "selection_target": "incorrect_analysis",
+    "stimulus": [
+      "a0036"
+    ],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "plot_reasoning",
+    "id": "q0019",
+    "instructions": "“片段中”的表述仅指下方提供的视频范围。四选一，选对得6分，选错得0分。",
+    "module": 4,
+    "options": [
+      {
+        "assets": [],
+        "content_id": "c7d54b2d09bf62067",
+        "id": "A",
+        "label": "音符与光芒将演唱延伸到更广阔的空间，随后疾驰的列车让共同前进的意志获得了具体形态。"
+      },
+      {
+        "assets": [],
+        "content_id": "c5aa0b30f96b6b7d3",
+        "id": "B",
+        "label": "众人所反抗的是以秩序维系的美梦，歌声中的希望因而包含了走向不确定现实的勇气。"
+      },
+      {
+        "assets": [],
+        "content_id": "cce03555902b87fa1",
+        "id": "C",
+        "label": "片段以开拓者戴上礼帽的致意串联多名角色的回望，将彼此的联系凝结为并肩而立的群像。"
+      },
+      {
+        "assets": [],
+        "content_id": "c0ac90b25916e8161",
+        "id": "D",
+        "label": "镜头从持械站立的众人转向舞台上演唱的少女，展现了他们以不同方式共同迎战的场面。"
+      }
+    ],
+    "order": 19,
+    "prompt": "观看视频，结合相关剧情，选出分析有误的一项。",
+    "score": 6,
+    "selection_target": "incorrect_analysis",
+    "stimulus": [
+      "a0037"
+    ],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "plot_reasoning",
+    "id": "q0020",
+    "instructions": "“片段中”的表述仅指下方提供的视频范围。四选一，选对得6分，选错得0分。",
+    "module": 4,
+    "options": [
+      {
+        "assets": [],
+        "content_id": "c8492b16a87900908",
+        "id": "A",
+        "label": "迷迷在少女手中化为一支笔，伙伴的形象通过变形衔接到少女接下来的挥笔动作。"
+      },
+      {
+        "assets": [],
+        "content_id": "c4c25a10b01785a0e",
+        "id": "B",
+        "label": "歌词从毁灭与命运的压迫转向不服输的反问，画面也由黄金裔群像转向少女执笔挥动，共同表现对既定命运的抗争。"
+      },
+      {
+        "assets": [],
+        "content_id": "c6f5ad34fd3978bd3",
+        "id": "C",
+        "label": "黄金裔与开拓者在开头围成一圈，向中心伸出的手势将这些人物联系在同一个群像之中。"
+      },
+      {
+        "assets": [],
+        "content_id": "c19c79855e25ad075",
+        "id": "D",
+        "label": "同伴从身后环住持握武器的少女，贴近的姿态与双人特写突出彼此的亲密联系。"
+      }
+    ],
+    "order": 20,
+    "prompt": "观看视频，结合相关剧情，选出分析有误的一项。",
+    "score": 6,
+    "selection_target": "incorrect_analysis",
+    "stimulus": [
+      "a0038"
+    ],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  },
+  {
+    "dimension": "plot_reasoning",
+    "id": "q0021",
+    "instructions": "“片段中”的表述仅指下方提供的视频范围。四选一，选对得6分，选错得0分。",
+    "module": 4,
+    "options": [
+      {
+        "assets": [],
+        "content_id": "c2aa0ee2d360e170f",
+        "id": "A",
+        "label": "公司与星核猎手虽立场不同，仍在危机中合作守护乐园。"
+      },
+      {
+        "assets": [],
+        "content_id": "c8c71e208fc0b752f",
+        "id": "B",
+        "label": "镜头在人物近景与宏大的危机场景之间切换，以尺度反差突出个人面对的威胁。"
+      },
+      {
+        "assets": [],
+        "content_id": "c906c446f824aed47",
+        "id": "C",
+        "label": "结尾在危机画面后切入黑屏并留下“逃吧”的字幕，将此前的行动推向结果未明的悬念。"
+      },
+      {
+        "assets": [],
+        "content_id": "cbfeca3074e406569",
+        "id": "D",
+        "label": "归寂、真珠与银狼的宣言交织在一起，呈现出危机之下不同人物的决意。"
+      }
+    ],
+    "order": 21,
+    "prompt": "观看视频，结合相关剧情，选出分析有误的一项。",
+    "score": 6,
+    "selection_target": "incorrect_analysis",
+    "stimulus": [
+      "a0039"
+    ],
+    "type": "single_choice",
+    "bank_version": "2-four-modules-20261025-stage2-music-shuffle"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "questions": 21,
+  "experiments": 25,
+  "answer_slots": 525,
+  "assets": 39,
+  "statuses": {
+    "valid_answer": 456,
+    "explicit_abstention": 14,
+    "not_submitted": 42,
+    "output_failure": 5,
+    "request_timeout": 4,
+    "technical_failure": 4
+  },
+  "source_sha256": "ef8cb0cf576d275ab190e4a5439474a16efe825960ce03a8c3038c2b292cd410",
+  "source_unchanged": true,
+  "paper_totals_and_modules_match": true,
+  "privacy_allowlist_and_pattern_checks": "passed"
+}

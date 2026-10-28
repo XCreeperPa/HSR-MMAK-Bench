@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>进入测试 · HSR-MMAK-Bench</title>
+<link rel="stylesheet" href="/static/service.css">
+</head>
+<body data-page="login">
+<header class="top"><div class="inner">
+  <h1>HSR-MMAK-Bench</h1>
+  <span class="meta">《崩坏：星穹铁道》多模态知识测试</span>
+</div></header>
+<main class="wrap narrow">
+  <div class="card">
+    <h2>输入身份验证码</h2>
+    <p class="lede">请输入管理员发给你的六位数字验证码。验证码与你的身份一一对应，不需要注册账号。</p>
+    <form id="codeForm" autocomplete="off">
+      <label for="code">身份验证码</label>
+      <input class="code" id="code" name="code" type="text" inputmode="numeric" pattern="[0-9]{6}"
+             maxlength="6" placeholder="000000" aria-describedby="codeHelp">
+      <span class="hint" id="codeHelp">六位数字，允许前导零。</span>
+      <div class="btnrow"><button class="btn" id="enter" type="submit">进入测试</button></div>
+    </form>
+    <div class="msg" id="msg"></div>
+  </div>
+  <footer class="note">
+    本次测试全程计时，关闭页面或断网不会暂停。中途退出后可以用同一个验证码继续，进度会保留。
+  </footer>
+</main>
+<script type="module" src="/static/human.js"></script>
+</body>
+</html>

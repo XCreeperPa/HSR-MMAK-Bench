@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>测试前问卷 · HSR-MMAK-Bench</title>
+<link rel="stylesheet" href="/static/service.css">
+</head>
+<body data-page="survey">
+<header class="top"><div class="inner">
+  <h1>HSR-MMAK-Bench</h1>
+  <span class="meta">测试前问卷</span>
+</div></header>
+<main class="wrap narrow">
+  <div class="card">
+    <h2>开始之前</h2>
+    <p class="lede">问卷只用于分析，不影响得分，也不计入答题时间。开始答题前都可以修改。</p>
+    <form id="surveyForm">
+      <label for="activeDays">你的游戏活跃天数属于哪个区间？</label>
+      <select id="activeDays" name="activeDays" required>
+        <option value="" disabled selected>请选择活跃天数区间</option>
+        <option value="0-49">0–49 天</option>
+        <option value="50-199">50–199 天</option>
+        <option value="200-500">200–500 天</option>
+        <option value="over-500">500 天以上</option>
+      </select>
+
+      <label for="familiarity">你对主线剧情、角色与背景的熟悉程度
+        <span class="sub">1 几乎不了解 → 5 非常熟悉</span>
+      </label>
+      <select id="familiarity" name="familiarity">
+        <option value="1">1 · 几乎不了解</option>
+        <option value="2">2 · 了解较少</option>
+        <option value="3" selected>3 · 了解一般</option>
+        <option value="4">4 · 比较熟悉</option>
+        <option value="5">5 · 非常熟悉主线、角色及背景</option>
+      </select>
+
+      <div class="btnrow"><button class="btn" type="submit">提交问卷并开始</button></div>
+    </form>
+    <div class="msg" id="msg"></div>
+  </div>
+</main>
+<script type="module" src="/static/human.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+  {
+    "file": "HSR-MMAK-Bench-v2-core-data-1.0.0.zip",
+    "bytes": 351347,
+    "sha256": "b872cc776c3bed9a87f2731c5a40be7050267745b8fb252e8570b6331f4cc728",
+    "md5": "b45a3544e28a49a72c22cc8b1d4e39d6",
+    "entries": 22
+  },
+  {
+    "file": "HSR-MMAK-Bench-v2-media-1.0.0.zip",
+    "bytes": 19133231,
+    "sha256": "88c2feeec1da1ebfd7ab4349b26bb3909b4d057b5554924541e68e449e2b9e61",
+    "md5": "8f64cd247f2a3da34f2e83df66e9dc79",
+    "entries": 40
+  },
+  {
+    "file": "HSR-MMAK-Bench-v2-platform-MIT-1.0.0.zip",
+    "bytes": 206919,
+    "sha256": "ed1345840928cc58a9070dda42161a44ecc440f133539b317d59d2867acebd50",
+    "md5": "5228de2cd45fe6d77040b311c21c32fd",
+    "entries": 36
+  }
+]

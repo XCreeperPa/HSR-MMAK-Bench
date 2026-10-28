@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>管理控制台 · HSR-MMAK-Bench</title>
+<link rel="stylesheet" href="/static/admin/vendor/tabulator-6.6.1/tabulator.min.css">
+<link rel="stylesheet" href="/static/admin/admin.css">
+</head>
+<body>
+<header class="adminbar"><div class="inner">
+  <h1>HSR-MMAK-Bench 管理控制台</h1>
+  <div class="views" id="views">
+    <button type="button" data-view="codes" class="active">当前验证码</button>
+    <button type="button" data-view="matrix">完整数据总表</button>
+    <button type="button" data-view="detail">第一模块标注详情</button>
+  </div>
+  <span class="grow"></span>
+  <span class="status" id="status">连接中……</span>
+</div></header>
+
+<main class="wrap" style="max-width:1600px">
+  <section id="login" hidden>
+    <div class="card narrow" style="margin:40px auto">
+      <h2>管理员登录</h2>
+      <p class="lede">管理员凭据与选手六位码相互独立。</p>
+      <label for="username">用户名</label>
+      <input id="username" type="text" value="admin" autocomplete="username">
+      <label for="password">口令</label>
+      <input id="password" type="password" autocomplete="current-password">
+      <div class="btnrow"><button class="btn" id="loginBtn" type="button">登录</button></div>
+      <div class="msg" id="loginMsg"></div>
+    </div>
+  </section>
+
+  <section id="codes" hidden>
+    <div class="toolbar">
+      <input type="search" id="codeSearch" placeholder="搜索姓名、模型或接入应用">
+      <span class="status" id="codeCount"></span>
+      <span class="grow"></span>
+      <button class="btn quiet" id="reloadCodes" type="button">刷新</button>
+    </div>
+    <div class="scroll"><table class="grid" id="codeTable"></table></div>
+    <p class="hint" style="margin-top:12px">
+      每名选手始终只有一个可用验证码；整场完成后服务端自动补发新码。
+      作废补码会停用当前试次并立即补发新码，旧试次的答案与事件全部保留。
+    </p>
+  </section>
+
+  <section id="matrix" hidden>
+    <div class="toolbar">
+      <div class="seg" id="mView">
+        <button type="button" data-mode="contestant" class="active">按选手看</button>
+        <button type="button" data-mode="question">按题目看</button>
+      </div>
+      <input type="search" id="mSearch" placeholder="搜索选手、模型、接入应用或验证码" style="min-width:260px">
+      <select id="mType"><option value="">全部类型</option><option value="human">人类</option><option value="agent">智能体</option></select>
+      <select id="mBank" aria-label="题库版本" title="按题库版本查看，旧版记录保留"></select>
+      <select id="mStatus">
+        <option value="">全部状态</option>
+        <option value="issued">未开始</option>
+        <option value="ready">已就绪</option>
+        <option value="in_progress">进行中</option>
+        <option value="completed">已完成</option>
+        <option value="voided">已作废</option>
+      </select>
+      <select id="mQualify">
+        <option value="">全部记录</option>
+        <option value="no">只看不计入统计</option>
+        <option value="yes">只看计入统计</option>
+      </select>
+      <select id="mMode">
+        <option value="by_contestant">按选手等权（默认）</option>
+        <option value="by_test">按测试次统计</option>
+      </select>
+      <select id="mGroup">
+        <option value="">不分组</option>
+        <option value="contestant_code">按选手分组</option>
+        <option value="contestant_type">按类型分组</option>
+        <option value="status">按状态分组</option>
+      </select>
+      <label><input type="checkbox" id="mExtra" checked> 含非统计记录</label>
+      <span class="status" id="mStat"></span>
+      <span class="grow"></span>
+      <button class="btn quiet" id="mColsBtn" type="button">逐列设置</button>
+      <button class="btn quiet" id="dlAllBtn" type="button">下载本版全部记录</button>
+      <select id="dlAllFormat" title="下载全部记录的格式">
+        <option value="xlsx">XLSX</option>
+        <option value="csv">CSV</option>
+        <option value="json">JSON</option>
+      </select>
+      <button class="btn quiet" id="dlViewBtn" type="button">下载当前视图</button>
+      <select id="dlViewFormat" title="下载当前视图的格式">
+        <option value="csv">CSV</option>
+        <option value="json">JSON</option>
+      </select>
+    </div>
+
+    <div class="overview" id="mOverview"></div>
+    <div id="columnSections" class="column-sections" role="group" aria-label="按内容显示或隐藏列"></div>
+
+    <div id="matrixTable" class="gridwrap"></div>
+    <div id="qTable" class="gridwrap" hidden></div>
+
+    <div id="colPanel" class="colpanel" hidden>
+      <div class="colpanel-head">
+        <b>列设置</b>
+        <input type="search" id="colSearch" placeholder="搜索列名">
+        <button class="btn quiet" id="colClose" type="button">关闭</button>
+      </div>
+      <div id="colTree"></div>
+    </div>
+
+    <div id="mDetail" class="rowdetail" hidden></div>
+
+    <p class="hint" style="margin-top:12px">
+      每一行是<b>一次测试</b>：同一名选手可以有多行，按「测试次」编号，第一行是第一次。
+      标了「（不计统计）」的行不进入汇总；上方「纳入 N 次完整测试」永远是正式统计口径，
+      与这里的显示范围无关。点一行查看逐题明细，第一模块的得分可打开标注对比。
+      可用「排除统计」标记某一次测试，保留原始记录；用时按分秒显示。
+    </p>
+  </section>
+
+  <section id="detail" hidden>
+    <div class="toolbar">
+      <label>测试ID <input type="number" id="dAssessment" style="width:120px"></label>
+      <label>题号 <input type="text" id="dQuestion" style="width:110px" value="q0001"></label>
+      <button class="btn" id="dLoad" type="button">载入标注详情</button>
+      <button class="btn quiet" id="dLoadAll" type="button">载入第一模块全部</button>
+      <span class="status" id="dStat"></span>
+      <span class="grow"></span>
+      <label><input type="checkbox" id="dTargets" checked> 显示标准答案判定框</label>
+      <label><input type="checkbox" id="dPoints" checked> 显示选手标注</label>
+      <span class="zoomctl">
+        <button class="btn quiet" id="dZoomOut" type="button" title="缩小">−</button>
+        <span id="dZoomLabel">100%</span>
+        <button class="btn quiet" id="dZoomIn" type="button" title="放大">+</button>
+        <button class="btn quiet" id="dZoomReset" type="button">复位</button>
+      </span>
+    </div>
+    <div class="detail" id="dOne">
+      <div class="stagewrap" id="dStage"></div>
+      <div>
+        <h3>提交点明细</h3>
+        <ul class="pointlist" id="dPointsList"></ul>
+      </div>
+    </div>
+    <div class="allstages" id="dAll"></div>
+  </section>
+</main>
+
+<div class="msg" id="msg" style="position:fixed;right:20px;bottom:20px;max-width:420px;background:#fff;border:1px solid var(--line)"></div>
+<script src="/static/admin/vendor/tabulator-6.6.1/tabulator.min.js"></script>
+<script type="module" src="/static/admin/admin.js"></script>
+</body>
+</html>

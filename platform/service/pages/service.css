@@ -1,0 +1,151 @@
+:root {
+  --bg: #fbfbf9;
+  --panel: #ffffff;
+  --ink: #1d232b;
+  --muted: #5a6472;
+  --line: #e3e1dc;
+  --accent: #2f5d8a;
+  --accent-soft: #eef3f8;
+  --danger: #9b2c2c;
+  --ok: #2e6b4f;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans CJK SC",
+    "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
+.wrap { max-width: 940px; margin: 0 auto; padding: 32px 20px 72px; }
+.narrow { max-width: 520px; }
+
+header.top {
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+  padding: 18px 20px;
+}
+header.top .inner { max-width: 940px; margin: 0 auto; display: flex; align-items: baseline; gap: 14px; }
+header.top h1 { font-size: 17px; margin: 0; font-weight: 600; letter-spacing: .01em; }
+header.top .meta { color: var(--muted); font-size: 13px; }
+
+h2 { font-size: 22px; margin: 0 0 6px; }
+h3 { font-size: 16px; margin: 22px 0 8px; }
+p { margin: 8px 0; }
+.lede { color: var(--muted); margin-top: 0; }
+.hint { color: var(--muted); font-size: 14px; }
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 24px;
+  margin: 18px 0;
+}
+
+label { display: block; font-weight: 600; margin: 14px 0 6px; }
+label .sub { font-weight: 400; color: var(--muted); font-size: 14px; display: block; }
+
+input[type=text], input[type=number], input[type=search], input[type=password], select {
+  font: inherit; width: 100%; padding: 10px 12px;
+  border: 1px solid var(--line); border-radius: 7px; background: #fff; color: var(--ink);
+}
+input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+input.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 30px; letter-spacing: .34em; text-align: center; padding: 12px 8px 12px 14px;
+}
+
+.btn {
+  font: inherit; font-weight: 600; cursor: pointer;
+  background: var(--accent); color: #fff; border: 0; border-radius: 7px;
+  padding: 11px 20px; margin-top: 18px;
+}
+.btn:hover { background: #27496b; }
+.btn[disabled] { background: #b9c3cd; cursor: not-allowed; }
+.btn.quiet { background: transparent; color: var(--accent); border: 1px solid var(--line); }
+.btn.danger { background: var(--danger); }
+.btnrow { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+
+.msg { margin-top: 14px; padding: 10px 13px; border-radius: 7px; font-size: 14px; display: none; }
+.msg.error { display: block; background: #fdf0f0; border: 1px solid #eccaca; color: var(--danger); }
+.msg.ok { display: block; background: #eef6f1; border: 1px solid #cfe4d8; color: var(--ok); }
+
+.progress { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 6px; }
+.progress .order { font-size: 14px; color: var(--muted); letter-spacing: .04em; }
+.progress .module { font-size: 14px; color: var(--accent); font-weight: 600; }
+.meter { height: 4px; background: var(--line); border-radius: 3px; overflow: hidden; margin: 10px 0 22px; }
+.meter > div { height: 100%; background: var(--accent); }
+
+.prompt { font-size: 18px; line-height: 1.65; margin: 6px 0 4px; }
+.instructions { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
+
+.media { margin: 16px 0; }
+.media img, .media video { max-width: 100%; border-radius: 8px; border: 1px solid var(--line); display: block; }
+.media audio { width: 100%; margin-top: 10px; }
+.media video { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #000; }
+
+.options { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 10px; }
+.option {
+  display: flex; gap: 12px; align-items: flex-start;
+  border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; background: #fff; cursor: pointer;
+}
+.option:hover { border-color: #bcc9d6; }
+.option input { margin-top: 5px; width: auto; flex: 0 0 auto; }
+.option .letter { font-weight: 700; color: var(--accent); min-width: 1.2em; }
+.options > li, .option, .option .text { min-width: 0; }
+.option .text { flex: 1; }
+.option img { width: 100%; height: auto; border-radius: 6px; margin-top: 8px; display: block; border: 1px solid var(--line); }
+.option:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+
+.reasons textarea { width: 100%; min-height: 58px; resize: vertical; font: inherit; padding: 9px 11px;
+  border: 1px solid var(--line); border-radius: 7px; }
+
+.annotation-page .wrap, .annotation-page header.top .inner { max-width: 1800px; }
+.annotation-page .wrap { padding-top: 20px; }
+.annotation-page #body { padding: 18px; }
+.picker { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 20px; align-items: start; }
+.picker > div { min-width: 0; }
+.picker label { margin-top: 0; }
+@media (max-width: 820px) { .picker { grid-template-columns: 1fr; } }
+
+.canvas { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #f2f1ed;
+  width: 100%; position: relative; }
+.stage { position: relative; max-width: 100%; }
+.stage img { display: block; width: 100%; height: 100%; cursor: crosshair; }
+.stage .pin {
+  pointer-events: none;
+  position: absolute; width: 26px; height: 26px; aspect-ratio: 1; margin: 0;
+  transform: translate(-50%, -50%); display: grid; place-items: center;
+  font: 600 12px/1 sans-serif; color: #fff;
+  border-radius: 50%; background: var(--accent); border: 2px solid #fff;
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.stage .pin.hit { background: rgba(46,107,79,.3); border-color: var(--ok); }
+/* 「先点图再选角色」时记下的位置：虚线空心环，和已落定的点区分开 */
+.stage .pin.pending { background: rgba(47,93,138,.08); border-style: dashed; border-color: var(--accent); }
+.roster { max-height: 360px; overflow: auto; border: 1px solid var(--line); border-radius: 8px; margin-top: 8px; }
+.roster-empty { padding: 10px 12px; color: var(--muted); font-size: 14px; }
+.roster button { display: block; width: 100%; text-align: left; font: inherit; cursor: pointer;
+  background: none; border: 0; border-bottom: 1px solid var(--line); padding: 8px 12px; color: var(--ink); }
+.roster button:last-child { border-bottom: 0; }
+.roster button.active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+/* 已经标过位置的角色：标出来，免得再标一次（重复标记不得分） */
+.roster button.done { color: var(--ok); }
+.roster .tick { float: right; font-size: 12px; color: var(--muted); font-weight: 400; }
+
+.placed { list-style: none; padding: 0; margin: 10px 0 0; font-size: 14px; }
+.placed li { display: flex; gap: 8px; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--line); padding: 6px 0; }
+.placed .rm { cursor: pointer; border: 0; background: none; color: var(--danger); font: inherit; }
+
+footer.note { color: var(--muted); font-size: 13px; margin-top: 26px; border-top: 1px solid var(--line); padding-top: 14px; }
+.receipt { background: var(--accent-soft); border: 1px solid #d5e2ee; border-radius: 8px; padding: 14px 16px; }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 12px 0 0; font-size: 14px; }
+dt { color: var(--muted); }
+dd { margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }

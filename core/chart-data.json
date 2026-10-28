@@ -1,0 +1,417 @@
+{
+  "source_sha256": "ef8cb0cf576d275ab190e4a5439474a16efe825960ce03a8c3038c2b292cd410",
+  "experiments": [
+    {
+      "experiment_id": "H05",
+      "public_label": "HSR-Player-2",
+      "group": "players",
+      "modules": {
+        "1": 33.5,
+        "2": 4.0,
+        "3": 30.0,
+        "4": 30.0
+      },
+      "total": 97.5,
+      "original_total": 97.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI19",
+      "public_label": "Gemini 4 Argon（High） / stdlib Python fixed runner",
+      "group": "traditional",
+      "modules": {
+        "1": 34.0,
+        "2": 3.0,
+        "3": 25.0,
+        "4": 30.0
+      },
+      "total": 92.0,
+      "original_total": 92.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI01",
+      "public_label": "GPT 6 Astra（Max） / ChatGPT Codex",
+      "group": "agents",
+      "modules": {
+        "1": 31.0,
+        "2": 3.0,
+        "3": 25.0,
+        "4": 24.0
+      },
+      "total": 83.0,
+      "original_total": 83.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI02",
+      "public_label": "GPT 6 Astra（Low） / ChatGPT Codex",
+      "group": "agents",
+      "modules": {
+        "1": 22.0,
+        "2": 0.0,
+        "3": 30.0,
+        "4": 30.0
+      },
+      "total": 82.0,
+      "original_total": 82.0,
+      "statuses": {
+        "valid_answer": 15,
+        "explicit_abstention": 6
+      }
+    },
+    {
+      "experiment_id": "AI03",
+      "public_label": "GPT 6.1 Sol（Max） / ChatGPT Codex",
+      "group": "agents",
+      "modules": {
+        "1": 20.0,
+        "2": 5.0,
+        "3": 30.0,
+        "4": 24.0
+      },
+      "total": 79.0,
+      "original_total": 79.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "H02",
+      "public_label": "HSR-Player-5",
+      "group": "players",
+      "modules": {
+        "1": 34.0,
+        "2": 6.0,
+        "3": 20.0,
+        "4": 18.0
+      },
+      "total": 78.0,
+      "original_total": 78.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI04",
+      "public_label": "GPT 6.1 Sol（Low） / ChatGPT Codex",
+      "group": "agents",
+      "modules": {
+        "1": 20.0,
+        "2": 0.0,
+        "3": 25.0,
+        "4": 24.0
+      },
+      "total": 69.0,
+      "original_total": 69.0,
+      "statuses": {
+        "valid_answer": 15,
+        "explicit_abstention": 6
+      }
+    },
+    {
+      "experiment_id": "AI10",
+      "public_label": "Seed 2.1Pro（低） / 豆包工作",
+      "group": "agents",
+      "modules": {
+        "1": 20.0,
+        "2": 2.0,
+        "3": 20.0,
+        "4": 24.0
+      },
+      "total": 66.0,
+      "original_total": 66.0,
+      "statuses": {
+        "valid_answer": 20,
+        "not_submitted": 1
+      }
+    },
+    {
+      "experiment_id": "H04",
+      "public_label": "HSR-Player-1",
+      "group": "players",
+      "modules": {
+        "1": 32.0,
+        "2": 3.0,
+        "3": 30.0,
+        "4": 0.0
+      },
+      "total": 65.0,
+      "original_total": 63.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "H03",
+      "public_label": "HSR-Player-3",
+      "group": "players",
+      "modules": {
+        "1": 30.5,
+        "2": 6.0,
+        "3": 15.0,
+        "4": 12.0
+      },
+      "total": 63.5,
+      "original_total": 60.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI07",
+      "public_label": "DeepSeek v4.1 Flash 1017（Max） / DeepSeek Harness",
+      "group": "agents",
+      "modules": {
+        "1": 19.0,
+        "2": 0.0,
+        "3": 20.0,
+        "4": 24.0
+      },
+      "total": 63.0,
+      "original_total": 63.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "H01",
+      "public_label": "HSR-Player-4",
+      "group": "players",
+      "modules": {
+        "1": 25.0,
+        "2": 4.0,
+        "3": 25.0,
+        "4": 6.0
+      },
+      "total": 60.0,
+      "original_total": 51.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI14",
+      "public_label": "Kimi K3.1（标准） / Kimi work",
+      "group": "agents",
+      "modules": {
+        "1": 23.0,
+        "2": 2.0,
+        "3": 15.0,
+        "4": 18.0
+      },
+      "total": 58.0,
+      "original_total": 58.0,
+      "statuses": {
+        "valid_answer": 20,
+        "not_submitted": 1
+      }
+    },
+    {
+      "experiment_id": "AI16",
+      "public_label": "MiniMax M3.1 Flash（Low） / MiniMax Code",
+      "group": "agents",
+      "modules": {
+        "1": 11.0,
+        "2": 3.0,
+        "3": 20.0,
+        "4": 24.0
+      },
+      "total": 58.0,
+      "original_total": 58.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI12",
+      "public_label": "Seed 2.1Lite（低） / 豆包工作",
+      "group": "agents",
+      "modules": {
+        "1": 6.5,
+        "2": 1.0,
+        "3": 25.0,
+        "4": 24.0
+      },
+      "total": 56.5,
+      "original_total": 56.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI11",
+      "public_label": "Seed 2.1Lite（高） / 豆包工作",
+      "group": "agents",
+      "modules": {
+        "1": 13.5,
+        "2": 1.0,
+        "3": 10.0,
+        "4": 24.0
+      },
+      "total": 48.5,
+      "original_total": 48.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI13",
+      "public_label": "Kimi K3.1（极致） / Kimi work",
+      "group": "agents",
+      "modules": {
+        "1": 24.0,
+        "2": 2.0,
+        "3": 20.0,
+        "4": 0.0
+      },
+      "total": 46.0,
+      "original_total": 46.0,
+      "statuses": {
+        "valid_answer": 14,
+        "not_submitted": 7
+      }
+    },
+    {
+      "experiment_id": "AI15",
+      "public_label": "MiniMax M3.1 Flash（Max） / MiniMax Code",
+      "group": "agents",
+      "modules": {
+        "1": 0.0,
+        "2": 1.0,
+        "3": 15.0,
+        "4": 30.0
+      },
+      "total": 46.0,
+      "original_total": 46.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI05",
+      "public_label": "GPT 6 Luna（Max） / ChatGPT Codex",
+      "group": "agents",
+      "modules": {
+        "1": 12.5,
+        "2": 1.0,
+        "3": 10.0,
+        "4": 18.0
+      },
+      "total": 41.5,
+      "original_total": 41.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI08",
+      "public_label": "DeepSeek v4.1 Flash 1017（Off） / DeepSeek Harness",
+      "group": "agents",
+      "modules": {
+        "1": 12.0,
+        "2": 2.0,
+        "3": 0.0,
+        "4": 24.0
+      },
+      "total": 38.0,
+      "original_total": 37.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI20",
+      "public_label": "Claude Opus 5.5（Max） / 传统测试执行器",
+      "group": "traditional",
+      "modules": {
+        "1": 12.0,
+        "2": 0.0,
+        "3": 15.0,
+        "4": 6.0
+      },
+      "total": 33.0,
+      "original_total": 33.0,
+      "statuses": {
+        "valid_answer": 6,
+        "output_failure": 5,
+        "explicit_abstention": 2,
+        "request_timeout": 4,
+        "technical_failure": 4
+      }
+    },
+    {
+      "experiment_id": "AI18",
+      "public_label": "Qwen3.8-Max（思考档位不可选） / Qwen Code",
+      "group": "agents",
+      "modules": {
+        "1": 19.0,
+        "2": 1.0,
+        "3": 10.0,
+        "4": 0.0
+      },
+      "total": 30.0,
+      "original_total": 30.0,
+      "statuses": {
+        "valid_answer": 13,
+        "not_submitted": 8
+      }
+    },
+    {
+      "experiment_id": "AI06",
+      "public_label": "GPT 6 Luna（Low） / ChatGPT Codex",
+      "group": "agents",
+      "modules": {
+        "1": 11.0,
+        "2": 1.0,
+        "3": 5.0,
+        "4": 12.0
+      },
+      "total": 29.0,
+      "original_total": 28.0,
+      "statuses": {
+        "valid_answer": 21
+      }
+    },
+    {
+      "experiment_id": "AI09",
+      "public_label": "Seed 2.1Pro（高） / 豆包工作",
+      "group": "agents",
+      "modules": {
+        "1": 17.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "total": 17.0,
+      "original_total": 17.0,
+      "statuses": {
+        "valid_answer": 3,
+        "not_submitted": 18
+      }
+    },
+    {
+      "experiment_id": "AI17",
+      "public_label": "MiMo-V2.6-Pro（思考档位不可选） / MiMo Desktop",
+      "group": "agents",
+      "modules": {
+        "1": 8.0,
+        "2": 1.0,
+        "3": 5.0,
+        "4": 0.0
+      },
+      "total": 14.0,
+      "original_total": 12.0,
+      "statuses": {
+        "valid_answer": 14,
+        "not_submitted": 7
+      }
+    }
+  ]
+}

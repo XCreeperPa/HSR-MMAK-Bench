@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the archived dataset/software and the related preprint."
+title: "HSR-MMAK-Bench v2"
+type: software
+version: "1.0.0"
+date-released: "2026-10-29"
+authors:
+  - name: "XCreeperPa"
+repository-code: "https://github.com/XCreeperPa/HSR-MMAK-Bench"
+doi: "10.5281/zenodo.23749374"
+license: MIT
+preferred-citation:
+  type: data
+  title: "HSR-MMAK-Bench v2 — Questions, Reference Answers, Responses, Scores and MIT Platform"
+  authors:
+    - name: "XCreeperPa"
+  doi: "10.5281/zenodo.23749374"
+  version: "1.0.0"
+  year: 2026
