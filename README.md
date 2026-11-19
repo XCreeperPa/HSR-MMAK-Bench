@@ -4,9 +4,15 @@
 Honkai: Star Rail Multimodal Agent Knowledge Benchmark v2
 
 [![Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23749374.svg)](https://doi.org/10.5281/zenodo.23749374)
-[![Paper DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23735304.svg)](https://doi.org/10.5281/zenodo.23735304)
+[![Paper 2026-11-19 DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24375291.svg)](https://doi.org/10.5281/zenodo.24375291)
+[![Paper 2026-11-14 DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24222819.svg)](https://doi.org/10.5281/zenodo.24222819)
+[![Paper 2026-10-29 DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23735304.svg)](https://doi.org/10.5281/zenodo.23735304)
 
 作者：**XCreeperPa**。本仓库发布v2的完整核心数据、素材与测试平台源码。
+
+- **2026-11-19 最新论文**：[《HSR-MMAK-Bench V2 的快速饱和分析：答案审计、改版约束与时空标注构想》](https://doi.org/10.5281/zenodo.24375291)（40个闭卷智能体配置、5名活跃玩家共945个题目位置及开卷`#138`单列对照，含论文PDF与XeLaTeX源码）。
+- **2026-11-14 正式稿**：[《HSR-MMAK-Bench v2 正式稿（2026-11-14）》](https://doi.org/10.5281/zenodo.24222819)（34组714个题目位置）。
+- **2026-10-29 首发预印本与核心数据**：[首发论文预印本](https://doi.org/10.5281/zenodo.23735304) · [完整核心数据、39项素材与MIT平台源码](https://doi.org/10.5281/zenodo.23749374)（25组525个题目位置，对应本仓库v1.0.0基线）。
 
 ## 发布内容
 
@@ -60,4 +66,4 @@ python -m service.app
 - 原创建题文字、参考文本、数据说明与分析：**CC BY 4.0**，见[核心许可说明](core/LICENSE.md)。
 - 第三方游戏图片、音频、视频及其他第三方权利保留；不包含在MIT或CC BY授权范围内，见[第三方说明](core/THIRD_PARTY_NOTICES.md)。Tabulator保留其原许可证。
 
-引用数据与代码请使用[数据集DOI](https://doi.org/10.5281/zenodo.23749374)；引用研究论述请使用[论文DOI](https://doi.org/10.5281/zenodo.23735304)。本项目与游戏官方或模型厂商无隶属关系。
+引用数据与代码请使用[数据集DOI](https://doi.org/10.5281/zenodo.23749374)；引用研究论述请使用[2026-11-19饱和与答案审计论文DOI](https://doi.org/10.5281/zenodo.24375291)、[2026-11-14正式稿DOI](https://doi.org/10.5281/zenodo.24222819)或[2026-10-29首发预印本DOI](https://doi.org/10.5281/zenodo.23735304)。本项目与游戏官方或模型厂商无隶属关系。
